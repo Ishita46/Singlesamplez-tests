@@ -100,3 +100,8 @@ fig.add_trace(go.Scatter(x=[first_std_deviation_end, first_std_deviation_end], y
 fig.add_trace(go.Scatter(x=[second_std_deviation_start, second_std_deviation_start], y=[0,0.17], mode = "lines", name = "STANDARD DEVIATION 2"))
 fig.add_trace(go.Scatter(x=[second_std_deviation_end, second_std_deviation_end], y=[0,0.17], mode = "lines", name = "STANDARD DEVIATION 2"))
 fig.show()
+
+#finding the z score using the formula
+z_score = (mean - mean_of_sample2)/std_deviation
+print("The z score is =", z_score)
+
